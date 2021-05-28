@@ -1,10 +1,10 @@
 [
 {"question":"Which operator is used to access a member of a structure: ",
 "answers":{
-            "a":"&#46;",
-            "b":"&#42;",
-            "c":"&#38;",
-            "d":"&#62;"
+            "a":".",
+            "b":"*",
+            "c":"&",
+            "d":">"
           },
  "correctAnswer":"a"},
 
