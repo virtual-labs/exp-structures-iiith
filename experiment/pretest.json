@@ -1,18 +1,24 @@
 [
-{"question":"This is a Sample Question 1?",
+{"question":"Which operator is used to access a member of a structure: ",
 "answers":{
-            "a":"answer1",
-            "b":"answer2",
-            "c":"answer3",
-            "d":"answer4"
+            "a":""."",
+            "b":""*"",
+            "c":""&"",
+            "d":"">""
           },
-"correctAnswer":"a"},
-{"question":"This is a Sample Question 2?",
+ "correctAnswer":"a"},
+
+{"question":"All the functionality of a union can be performed by a structure?",
 "answers":{
-            "a":"answer1",
-            "b":"answer2",
-            "c":"answer3",
-            "d":"answer4"
+            "a":"True",
+            "b":"False"
           },
-"correctAnswer":"c"} 
+ "correctAnswer":"a"},
+    
+{"question":"A structure can be defined inside a structure",
+"answers":{
+            "a":"True",
+            "b":"False"
+          },
+"correctAnswer":"a"} 
 ]
