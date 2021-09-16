@@ -1,20 +1,30 @@
 [
-{"question":"Default values can be given to the members of the structure :",
+{"question":"6. Arrays can be a part of the structure? ",
 "answers":{
             "a":"True",
             "b":"False"
           },
- "correctAnswer":"b"},
- {"question":"Arrays can be a part of the structure? ",
+"correctAnswer":"a"},
+
+{"question":"7. One can define an array of structure variables?",
 "answers":{
             "a":"True",
             "b":"False"
           },
-  "correctAnswer":"a"},
-    {"question":"One can define an array of structure variables?",
+"correctAnswer":"a"},
+
+{"question":"8. The following structure declaration is correct? <br/>   <img src='images/code8.png'>",
 "answers":{
             "a":"True",
             "b":"False"
           },
-     "correctAnswer":"a"}
+"correctAnswer":"b"},
+
+{"question":"9. A structure is a collection of variables under a ______ name .",
+"answers":{
+            "a":"Single",
+            "b":"multiple"
+          },
+"correctAnswer":"a"}
+
 ]
