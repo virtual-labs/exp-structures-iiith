@@ -4,6 +4,6 @@
 4.  The output of the code is shown in the right
 
 
-#### Manual
+**Manual**
 
 In this experiment you will understand how to define structures according to problem requirements. You will also do operations on structure elements.
