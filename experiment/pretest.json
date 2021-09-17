@@ -1,18 +1,41 @@
 [
-{"question":"This is a Sample Question 1?",
+{"question":"1. Which operator is used to access a member of a structure: ",
 "answers":{
-            "a":"answer1",
-            "b":"answer2",
-            "c":"answer3",
-            "d":"answer4"
+            "a":".",
+            "b":"*",
+            "c":"&",
+            "d":">"
+          },
+ "correctAnswer":"a"},
+
+{"question":"2. All the functionality of a union can be performed by a structure?",
+"answers":{
+            "a":"True",
+            "b":"False"
+          },
+ "correctAnswer":"a"},
+    
+{"question":"3. A structure can be defined inside a structure",
+"answers":{
+            "a":"True",
+            "b":"False"
           },
 "correctAnswer":"a"},
-{"question":"This is a Sample Question 2?",
+ 
+{"question":"4. Default values can be given to the members of the structure :",
 "answers":{
-            "a":"answer1",
-            "b":"answer2",
-            "c":"answer3",
-            "d":"answer4"
+            "a":"True",
+            "b":"False"
           },
-"correctAnswer":"c"} 
+ "correctAnswer":"b"},
+
+{"question":"5. What will be the ouptut of the following function call: fun4(4,3); where fun4 is defined as: <br/>  <img src='images/code5.png'> ",
+"answers":{
+            "a":"10 60",
+            "b":"20 60",
+            "c":"40 50",
+            "d":"80 30"
+          },
+ "correctAnswer":"a"}
+
 ]
