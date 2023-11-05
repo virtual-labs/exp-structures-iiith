@@ -2,6 +2,9 @@
 // Author: Parvesh Kumar Gahanolia |
 // Email: <parvesh@vlabs.ac.in>    |
 //---------------------------------+
+// Updated: Bhav Beri              |
+// Email: <bhavberi@gmail.com>    |
+//---------------------------------+
 
 window.model = {
 
@@ -42,7 +45,7 @@ window.view = {
         '&emsp;unsigned int age;</br>' +  
         '&emsp;unsigned int salary;</br>' +
         '&emsp;};</br>' +
-        'Now define an Account structure below:</br>',
+        'Now define an Account structure:</br>',
     instruction2: 'Let us say we are opening an account for Suresh We will simply say:</br></br>' +
         'struct account Suresh;</br></br>' +
         'We can also use a type definition. This allows us to create account as a type of variable' +
@@ -97,11 +100,11 @@ window.view = {
         '&emsp;bank[3]=initAcc(\"Suresh\",\"Savings\",\",1000000004,800);</br>' +
         '&emsp;account max=findmax(bank);</br>' +
         '}</br>',
-    solutionHint1: 'struct account{\n\n\n\n};',
-    solutionHint2: '',
-    solutionHint3: 'account initAcc(char* name, char* type, char* branch, char* number, unsigned int balance)\n{\n\n}',
-    solutionHint4: 'account findMaxBal(account src[], int size){\n}',
-    solution1: 'struct account{</br>' +
+    solutionHint1: 'struct account {\n\n\n};',
+    solutionHint2: '// Write your code here\n\n',
+    solutionHint3: 'account initAcc(char* name, char* type, char* branch, char* number, unsigned int balance)\n{\n&emsp;\n}',
+    solutionHint4: 'account findMaxBal(account src[], int size) {\n}',
+    solution1: 'struct account {</br>' +
         '&emsp;char type[10];</br>' +
         '&emsp;char holder[30];</br>' +
         '&emsp;char branch[20];</br>' +
@@ -112,34 +115,33 @@ window.view = {
         'account shyam;</br>' +
         'ram.bal=100;</br>' +
         'shyam.bal=2*ram.bal;</br>',
-    solution3: 'account initAcc(char* name,char* type,char* branch,char* number,unsigned int balance){</br>' +
-        'int isErr=0;</br>' +
-        'account newAc;</br>' +
-        'strcpy(newAc.holder,name);</br>' +
-        'strcpy(newAc.branch,branch);</br>' +
-        'if (strcmp(type,\"current\")==0 || strcmp(type,\"savings\")==0);</br>' +
-        'strcpy(newAc.type,type);</br>' +
-        'else isErr=1;</br>' +
-        'if (strlen(number)==10)</br>' +
-        'strcpy(newAc.no,number);</br>' +
-        'else isErr=1;</br>' +
-        'newAc.bal=balance;</br>' +
-        'if (!isErr)</br>' +
-        'return (newAc);</br>' +
-        'return NULL;</br>' +
+    solution3: 'account initAcc(char* name,char* type,char* branch,char* number,unsigned int balance) {</br>' +
+        '&emsp;int isErr=0;</br>' +
+        '&emsp;account newAc;</br>' +
+        '&emsp;strcpy(newAc.holder,name);</br>' +
+        '&emsp;strcpy(newAc.branch,branch);</br>' +
+        '&emsp;if (strcmp(type,\"current\")==0 || strcmp(type,\"savings\")==0)</br>' +
+        '&emsp;&emsp;strcpy(newAc.type,type);</br>' +
+        '&emsp;else </br>&emsp;&emsp;isErr=1;</br>' +
+        '&emsp;if (strlen(number)==10)</br>' +
+        '&emsp;&emsp;strcpy(newAc.no,number);</br>' +
+        '&emsp;else<br/>&emsp;&emsp;isErr=1;</br>' +
+        '&emsp;newAc.bal=balance;</br>' +
+        '&emsp;if (!isErr)</br>' +
+        '&emsp;&emsp;return (newAc);</br>' +
+        '&emsp;return NULL;</br>' +
         '}</br>',
     solution4: 'account findMaxBal(account src[], int size){</br>' +
-        'int i=0;</br>' +
-        'int maxBalIndex=0;</br>' +
-        'for (;i<size;i++){</br>' +
-        'if (src[i].bal>src[maxBalIndex].bal)</br>' +
-        'maxBalIndex=i;</br>' +
-        '}</br>' +
-        'printf (\"maxBalIndex is %d\", maxBalIndex);</br>' +
-        'return src[maxBalIndex];</br>' +
+        '&emsp;int maxBalIndex=0;</br>' +
+        '&emsp;for (int i=0; i &lt; size; i++){ </br>' +
+        '&emsp;&emsp;if (src[i].bal &gt src[maxBalIndex].bal)</br>' +
+        '&emsp;&emsp;&emsp;maxBalIndex=i;</br>' +
+        '&emsp;}</br>' +
+        '&emsp;printf (\"maxBalIndex is %d\", maxBalIndex);</br>' +
+        '&emsp;return src[maxBalIndex];</br>' +
         '}</br>',
-    suggestion1: '\"Try Again\"',
-    suggestion2: '',
+    // suggestion1: '\"Try Again\"',
+    // suggestion2: '',
     // addClickEvent: add EventListener to other methods.
     addClickEvent: function (id, method) {
         var element = document.getElementById(id);
@@ -207,37 +209,41 @@ window.view = {
     // showDefinitionOfAccount: gives solution for how to define structure.
     showDefinitionOfAccount: function () {
         this.setInnerHTML('solutionArea', this.solution1);
-        this.copyValue('solutionHintArea', 'viewUserCode');
+        // this.copyValue('solutionHintArea', 'viewUserCode');
         this.changeClass('yesBtnId', 'button buttonPosition');
         this.changeClass('noBtn', 'button buttonPosition');
         this.changeClass('submitBtnId', 'button buttonPosition hide');
+        document.getElementById('solutionHintArea').disabled = true;
         this.stateOfExeplation = 1;
     },
     // showDeclarationStructure: gives solution for how to declare structure.
     showDeclarationStructure: function () {
         this.setInnerHTML('solutionArea', this.solution2);
-        this.copyValue('solutionHintArea', 'viewUserCode');
+        // this.copyValue('solutionHintArea', 'viewUserCode');
         this.changeClass('yesBtnId', 'button buttonPosition');
         this.changeClass('noBtn', 'button buttonPosition');
         this.changeClass('submitBtnId', 'button buttonPosition hide');
+        document.getElementById('solutionHintArea').disabled = true;
         this.stateOfExeplation = 2;
     },
     // showHowToFillAccount: gives solution to fill an account.
     showHowToFillAccount: function () {
         this.setInnerHTML('solutionArea', this.solution3);
-        this.copyValue('solutionHintArea', 'viewUserCode');
+        // this.copyValue('solutionHintArea', 'viewUserCode');
         this.changeClass('yesBtnId', 'button buttonPosition');
         this.changeClass('noBtn', 'button buttonPosition');
         this.changeClass('submitBtnId', 'button buttonPosition hide');
+        document.getElementById('solutionHintArea').disabled = true;
         this.stateOfExeplation = 3;
     },
     // showMaximumBalance: gives solution to find, maximum balance holder.
     showMaximumBalance: function () {
         this.setInnerHTML('solutionArea', this.solution4);
-        this.copyValue('solutionHintArea', 'viewUserCode');
+        // this.copyValue('solutionHintArea', 'viewUserCode');
         this.changeClass('yesBtnId', 'button buttonPosition');
         this.changeClass('noBtn', 'button buttonPosition');
         this.changeClass('submitBtnId', 'button buttonPosition hide');
+        document.getElementById('solutionHintArea').disabled = true;
         this.stateOfExeplation = 4;
     },
     // goOnDeclareStructure: gives instructions for how to declare structure.
@@ -246,11 +252,12 @@ window.view = {
         this.setInnerHTML('stepId', this.stepString2);
         this.setInnerHTML('guideLineId',  this.guidelineString2);
         this.setInnerHTML('solutionArea', '');
-        this.eraseString('solutionHintArea');
-        this.eraseString('viewUserCode');
+        this.setString('solutionHintArea', this.solutionHint2);
+        // this.eraseString('viewUserCode');
         this.changeClass('yesBtnId', 'button buttonPosition hide');
         this.changeClass('noBtn', 'button buttonPosition hide');
         this.changeClass('submitBtnId', 'button buttonPosition');
+        document.getElementById('solutionHintArea').disabled = false;
         this.stateOfSolution = 2;
     },
     // goToFillAccount: gives instructions for how to fill account.
@@ -260,10 +267,11 @@ window.view = {
         this.setInnerHTML('guideLineId',  this.guidelineString3);
         this.setInnerHTML('solutionArea', '');
         this.setString('solutionHintArea', this.solutionHint3);
-        this.eraseString('viewUserCode');
+        // this.eraseString('viewUserCode');
         this.changeClass('yesBtnId', 'button buttonPosition hide');
         this.changeClass('noBtn', 'button buttonPosition hide');
         this.changeClass('submitBtnId', 'button buttonPosition');
+        document.getElementById('solutionHintArea').disabled = false;
         this.stateOfSolution = 3;
     },
     // goToHandleData: gives instructions to find, maximum balance holder
@@ -277,21 +285,24 @@ window.view = {
         this.changeClass('yesBtnId', 'button buttonPosition hide');
         this.changeClass('noBtn', 'button buttonPosition hide');
         this.changeClass('submitBtnId', 'button buttonPosition');
-        this.eraseString('viewUserCode');
+        document.getElementById('solutionHintArea').disabled = false;
+        // this.eraseString('viewUserCode');
         this.stateOfSolution = 4;
     },
     // goToEndOfCode: resets whole experiment to it's initial state. 
     goToEndOfCode: function () {
         this.stateOfSolution = 1;
         this.setInitialString();
+        document.getElementById('solutionHintArea').disabled = false;
     },
     // removeErrorOfCode: work when user click on button.
     removeErrorOfCode: function () {
-        this.setString('viewUserCode', this.suggestion1);
+        // this.setString('viewUserCode', this.suggestion1);
         this.setInnerHTML('solutionArea', this.suggestion2);
         this.changeClass('yesBtnId', 'button buttonPosition hide');
         this.changeClass('noBtn', 'button buttonPosition hide');
         this.changeClass('submitBtnId', 'button buttonPosition');
+        document.getElementById('solutionHintArea').disabled = false;
     },
     // setInitialString: works when whole experiment reset in it's initial state.
     setInitialString: function () {
@@ -302,7 +313,7 @@ window.view = {
         this.setString('solutionHintArea', this.solutionHint1);
         this.setInnerHTML('stepId', this.stepString1);
         this.setInnerHTML('guideLineId',  this.guidelineString1);
-        this.setString('viewUserCode', '');
+        // this.setString('viewUserCode', '');
         this.setInnerHTML('solutionArea', '');
     },
     // createStaticStateOfSolution: work on submit button according to state of experiment solution.
