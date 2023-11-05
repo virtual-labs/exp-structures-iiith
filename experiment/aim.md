@@ -1,4 +1,11 @@
-A variable of a certain data type such as int or char can store only one element of that data type. An array, on the other hand, can store multiple elements of a fixed data type. An array, thus, allows a programmer to address a collection of similar elements by a single name, while also allowing him to address each of the elements by their index in the array.
+When working with data in programming, you often encounter variables of specific data types like int or char, which can store only a single element of that data type. However, the real world is rarely so simplistic. What if you need to manage a collection of related elements, each with its own data type? Arrays offer a solution, allowing you to store multiple elements of a fixed data type. With arrays, you can address this collection collectively using a single name while accessing each individual element through its unique index in the array.
 
-Can we create a collection of data elements of various data types and refer to this collection by a single name? The answer to this question is 'yes' and this is possible by the use of structures. A structure allows you to make a collection of various elements of different data types and refer to them by a single name. A structure can contain arrays as well. Hence, a structure in some sense acts like a new data type which has multiple components of various other data types. So, it is possible to make an array of structure variables also.
+But what if you want to create a collection of data elements with diverse data types and reference this entire ensemble with a single identifier? The answer is a resounding 'yes,' and the tool for this task is structures. Structures empower you to assemble a heterogeneous collection of elements, each with its own data type, and then reference this entire assembly using a single name. Structures can even include arrays, making them incredibly versatile.
 
+In essence, a structure serves as a custom data type that can encompass multiple components of various data types, allowing you to encapsulate complex data structures in a cohesive manner. This flexibility also extends to creating arrays of structure variables, further enhancing your ability to manage and organize your data effectively.
+
+With this lab, you will gets hands-on and try:
+
+- To understand how to use structures as a compund datatype.
+- To design structures according to your requirement.
+- To understand when structures are better data-structures than arrays.
