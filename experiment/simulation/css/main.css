@@ -13,6 +13,14 @@
     border-radius: 1rem;
 }
 
+#continue {
+    width: 100%;
+    color: #3c8dde;
+    font-size: 1.2em;
+    margin-top: .9vmin;
+    height: 30px;
+}
+
 .button,
 .buttonDisable {
     padding: 0.5em 1em;
@@ -234,7 +242,8 @@
 }
 
 .codeEditArea,
-.codeOutputText {
+.codeOutputText,
+.explanationText {
     line-height: 130%;
     font-size: 1.2em;
     height: 200px;

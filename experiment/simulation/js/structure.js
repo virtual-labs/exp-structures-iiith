@@ -141,7 +141,7 @@ window.view = {
         '&emsp;return src[maxBalIndex];</br>' +
         '}</br>',
     // suggestion1: '\"Try Again\"',
-    // suggestion2: '',
+    suggestion2: '',
     // addClickEvent: add EventListener to other methods.
     addClickEvent: function (id, method) {
         var element = document.getElementById(id);
@@ -201,6 +201,12 @@ window.view = {
         document.getElementById(id1).style.display = 'none';
         document.getElementById(id2).style.display = 'none';
     },
+    hideContinue: function (hide = true) {
+        if (hide)
+            this.changeClass('continue', 'hide');
+        else
+            this.changeClass('continue', '');
+    },
     // copyValue: copy value from one text area and past this value to another text area.
     copyValue: function (id1, id2) {
         var valueOfTextArea = document.getElementById(id1).value;
@@ -210,8 +216,9 @@ window.view = {
     showDefinitionOfAccount: function () {
         this.setInnerHTML('solutionArea', this.solution1);
         // this.copyValue('solutionHintArea', 'viewUserCode');
-        this.changeClass('yesBtnId', 'button buttonPosition');
-        this.changeClass('noBtn', 'button buttonPosition');
+        // this.changeClass('yesBtnId', 'button buttonPosition');
+        // this.changeClass('noBtn', 'button buttonPosition');
+        this.hideContinue(false);
         this.changeClass('submitBtnId', 'button buttonPosition hide');
         document.getElementById('solutionHintArea').disabled = true;
         this.stateOfExeplation = 1;
@@ -220,8 +227,9 @@ window.view = {
     showDeclarationStructure: function () {
         this.setInnerHTML('solutionArea', this.solution2);
         // this.copyValue('solutionHintArea', 'viewUserCode');
-        this.changeClass('yesBtnId', 'button buttonPosition');
-        this.changeClass('noBtn', 'button buttonPosition');
+        // this.changeClass('yesBtnId', 'button buttonPosition');
+        // this.changeClass('noBtn', 'button buttonPosition');
+        this.hideContinue(false);
         this.changeClass('submitBtnId', 'button buttonPosition hide');
         document.getElementById('solutionHintArea').disabled = true;
         this.stateOfExeplation = 2;
@@ -230,8 +238,9 @@ window.view = {
     showHowToFillAccount: function () {
         this.setInnerHTML('solutionArea', this.solution3);
         // this.copyValue('solutionHintArea', 'viewUserCode');
-        this.changeClass('yesBtnId', 'button buttonPosition');
-        this.changeClass('noBtn', 'button buttonPosition');
+        // this.changeClass('yesBtnId', 'button buttonPosition');
+        // this.changeClass('noBtn', 'button buttonPosition');
+        this.hideContinue(false);
         this.changeClass('submitBtnId', 'button buttonPosition hide');
         document.getElementById('solutionHintArea').disabled = true;
         this.stateOfExeplation = 3;
@@ -240,8 +249,9 @@ window.view = {
     showMaximumBalance: function () {
         this.setInnerHTML('solutionArea', this.solution4);
         // this.copyValue('solutionHintArea', 'viewUserCode');
-        this.changeClass('yesBtnId', 'button buttonPosition');
-        this.changeClass('noBtn', 'button buttonPosition');
+        // this.changeClass('yesBtnId', 'button buttonPosition');
+        // this.changeClass('noBtn', 'button buttonPosition');
+        this.hideContinue(false);
         this.changeClass('submitBtnId', 'button buttonPosition hide');
         document.getElementById('solutionHintArea').disabled = true;
         this.stateOfExeplation = 4;
@@ -254,8 +264,9 @@ window.view = {
         this.setInnerHTML('solutionArea', '');
         this.setString('solutionHintArea', this.solutionHint2);
         // this.eraseString('viewUserCode');
-        this.changeClass('yesBtnId', 'button buttonPosition hide');
-        this.changeClass('noBtn', 'button buttonPosition hide');
+        // this.changeClass('yesBtnId', 'button buttonPosition hide');
+        // this.changeClass('noBtn', 'button buttonPosition hide');
+        this.hideContinue(true);
         this.changeClass('submitBtnId', 'button buttonPosition');
         document.getElementById('solutionHintArea').disabled = false;
         this.stateOfSolution = 2;
@@ -268,8 +279,9 @@ window.view = {
         this.setInnerHTML('solutionArea', '');
         this.setString('solutionHintArea', this.solutionHint3);
         // this.eraseString('viewUserCode');
-        this.changeClass('yesBtnId', 'button buttonPosition hide');
-        this.changeClass('noBtn', 'button buttonPosition hide');
+        // this.changeClass('yesBtnId', 'button buttonPosition hide');
+        // this.changeClass('noBtn', 'button buttonPosition hide');
+        this.hideContinue(true);
         this.changeClass('submitBtnId', 'button buttonPosition');
         document.getElementById('solutionHintArea').disabled = false;
         this.stateOfSolution = 3;
@@ -282,8 +294,9 @@ window.view = {
         this.setInnerHTML('guideLineId',  this.guidelineString4);
         this.setInnerHTML('solutionArea', '');
         this.setString('solutionHintArea', this.solutionHint4);
-        this.changeClass('yesBtnId', 'button buttonPosition hide');
-        this.changeClass('noBtn', 'button buttonPosition hide');
+        // this.changeClass('yesBtnId', 'button buttonPosition hide');
+        // this.changeClass('noBtn', 'button buttonPosition hide');
+        this.hideContinue(true);
         this.changeClass('submitBtnId', 'button buttonPosition');
         document.getElementById('solutionHintArea').disabled = false;
         // this.eraseString('viewUserCode');
@@ -299,16 +312,18 @@ window.view = {
     removeErrorOfCode: function () {
         // this.setString('viewUserCode', this.suggestion1);
         this.setInnerHTML('solutionArea', this.suggestion2);
-        this.changeClass('yesBtnId', 'button buttonPosition hide');
-        this.changeClass('noBtn', 'button buttonPosition hide');
+        // this.changeClass('yesBtnId', 'button buttonPosition hide');
+        // this.changeClass('noBtn', 'button buttonPosition hide');
+        this.hideContinue(true);
         this.changeClass('submitBtnId', 'button buttonPosition');
         document.getElementById('solutionHintArea').disabled = false;
     },
     // setInitialString: works when whole experiment reset in it's initial state.
     setInitialString: function () {
         this.changeClass('submitBtnId', 'button buttonPosition');
-        this.changeClass('yesBtnId', 'button buttonPosition hide');
-        this.changeClass('noBtn', 'button buttonPosition hide');
+        // this.changeClass('yesBtnId', 'button buttonPosition hide');
+        // this.changeClass('noBtn', 'button buttonPosition hide');
+        this.hideContinue(true);
         this.setInnerHTML('instructionArea', this.instruction1);
         this.setString('solutionHintArea', this.solutionHint1);
         this.setInnerHTML('stepId', this.stepString1);
