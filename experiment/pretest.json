@@ -1,41 +1,127 @@
-[
-{"question":"1. Which operator is used to access a member of a structure: ",
-"answers":{
-            "a":".",
-            "b":"*",
-            "c":"&",
-            "d":">"
-          },
- "correctAnswer":"a"},
-
-{"question":"2. All the functionality of a union can be performed by a structure?",
-"answers":{
-            "a":"True",
-            "b":"False"
-          },
- "correctAnswer":"a"},
-    
-{"question":"3. A structure can be defined inside a structure",
-"answers":{
-            "a":"True",
-            "b":"False"
-          },
-"correctAnswer":"a"},
- 
-{"question":"4. Default values can be given to the members of the structure :",
-"answers":{
-            "a":"True",
-            "b":"False"
-          },
- "correctAnswer":"b"},
-
-{"question":"5. What will be the ouptut of the following function call: fun4(4,3); where fun4 is defined as: <br/>  <img src='images/code5.png'> ",
-"answers":{
-            "a":"10 60",
-            "b":"20 60",
-            "c":"40 50",
-            "d":"80 30"
-          },
- "correctAnswer":"a"}
-
-]
+{
+    "version": 2.0,
+    "questions": [
+        {
+            "question": "1. What is a structure in programming, and how does it differ from an array?",
+            "answers": {
+                "a": "A structure is a collection of data elements with the same data type.",
+                "b": "A structure is used to represent objects, whereas an array is used for data storage.",
+                "c": "A structure is a way to group elements of different data types, while an array stores elements of the same data type.",
+                "d": "A structure is a more efficient way to iterate through data."
+            },
+            "correctAnswer": "c",
+            "explanations": {
+                "a": "This option is incorrect. A structure can contain elements of different data types, not just the same data type.",
+                "b": "This option is incorrect. While structures can be used to represent objects, arrays are also used for data storage, and this option does not address the primary difference between structures and arrays.",
+                "c": "This option is correct. A structure is a way to group elements of different data types into a single unit, whereas an array typically stores elements of the same data type.",
+                "d": "This option is incorrect. Efficiency in iterating through data depends on the specific use case and implementation, and it is not the primary purpose of a structure or array."
+            },
+            "difficulty": "beginner"
+        },
+        {
+            "question": "2. Which operator is used to access a member of a structure: ",
+            "answers": {
+                "a": ".",
+                "b": "*",
+                "c": "&",
+                "d": ">"
+            },
+            "correctAnswer": "a",
+            "explanations": {
+                "a": "This option is correct. The dot (.) operator is used to access a member of a structure in many programming languages.",
+                "b": "This option is incorrect. The asterisk (*) operator is typically used for pointer operations and dereferencing.",
+                "c": "This option is incorrect. The ampersand (&) operator is often used for obtaining the address of a variable.",
+                "d": "This option is incorrect. The greater-than (>) operator is generally used for comparisons in conditional statements."
+            },
+            "difficulty": "beginner"
+        },
+        {
+            "question": "3. All the functionality of a union can be performed by a structure?",
+            "answers": {
+                "a": "True",
+                "b": "False"
+            },
+            "correctAnswer": "a",
+            "explanations": {
+                "a": "This option is True. In most programming languages, the functionality of a union can be emulated using a structure. However, unions are specifically designed to save memory by allowing multiple variables to share the same memory location, while structures allocate separate memory for each member. So, while you can achieve similar functionality with a structure, it may not be as memory-efficient as a union.",
+                "b": "This option is False. All the functionality of a union can be emulated using a structure, although unions are optimized for memory usage, which structures do not provide."
+            },
+            "difficulty": "intermediate"
+        },
+        {
+            "question": "4. A structure can be defined inside a structure",
+            "answers": {
+                "a": "True",
+                "b": "False"
+            },
+            "correctAnswer": "a",
+            "explanations": {
+                "a": "This option is True. In many programming languages, including C and C++, you can define a structure inside another structure. This is often referred to as a nested structure or a structure within a structure. It allows you to create more complex data structures with hierarchical or nested components.",
+                "b": "This option is False. A structure can indeed be defined inside another structure in several programming languages, making it a valid practice to create nested or hierarchical data structures."
+            },
+            "difficulty": "beginner"
+        },
+        {
+            "question": "5. Default values can be given to the members of the structure",
+            "answers": {
+                "a": "True",
+                "b": "False"
+            },
+            "correctAnswer": "b",
+            "explanations": {
+                "a": "This option is False. In many programming languages, structures do not provide a built-in mechanism for specifying default values for their members. You typically need to assign values to the structure members explicitly in your code.",
+                "b": "This option is True. In most programming languages, structures do not inherently support default values for their members. You need to explicitly set values for structure members in your code if default values are required."
+            },
+            "difficulty": "intermediate"
+        },
+        {
+            "question": "6. What is the primary purpose of using arrays in programming?",
+            "answers": {
+                "a": "Storing elements of various data types",
+                "b": "Managing multiple elements of the same data type",
+                "c": "Simplifying code structure",
+                "d": "Handling conditional statements"
+            },
+            "correctAnswer": "b",
+            "explanations": {
+                "a": "This option is incorrect. Arrays are typically used to manage multiple elements of the same data type, not for storing elements of various data types.",
+                "b": "This option is correct. The primary purpose of arrays in programming is to manage collections of elements that are of the same data type, allowing for efficient storage and manipulation.",
+                "c": "This option is not the primary purpose of arrays. While they can help in organizing and structuring code, their primary role is data storage and manipulation.",
+                "d": "This option is unrelated to the primary purpose of arrays. Arrays are used for managing collections of data, not for handling conditional statements."
+            },
+            "difficulty": "beginner"
+        },
+        {
+            "question": "7. Can a structure contain an array as one of its members?",
+            "answers": {
+                "a": "No, structures can only contain primitive data types.",
+                "b": "Yes, structures can contain arrays as well as other data types.",
+                "c": "No, arrays can only be used as standalone variables."
+            },
+            "correctAnswer": "b",
+            "explanations": {
+                "a": "This option is incorrect. Structures can indeed contain arrays as well as other data types.",
+                "b": "This option is correct. Structures can contain arrays, in addition to other data types, as their members. This is a common practice in programming to create complex data structures.",
+                "c": "This option is incorrect. Arrays can be used as members within structures, and they are not limited to standalone variables."
+            },
+            "difficulty": "intermediate"
+        },
+        {
+            "question": "8. What is a deep copy in the context of arrays of structures?",
+            "answers": {
+                "a": "Copying the structure's member elements without replicating the entire structure",
+                "b": "Creating a copy of the structure with all its elements and nested structures",
+                "c": "Copying only the first element of the structure",
+                "d": "Deep copy is not applicable to arrays of structures."
+            },
+            "correctAnswer": "b",
+            "explanations": {
+                "a": "This option is incorrect. Copying the structure's member elements without replicating the entire structure is more like a shallow copy, not a deep copy.",
+                "b": "This option is correct. A deep copy involves creating a copy of the structure with all its elements, including nested structures, resulting in a completely independent copy.",
+                "c": "This option is incorrect. Copying only the first element of the structure is not a definition of a deep copy.",
+                "d": "This option is incorrect. Deep copy is applicable to arrays of structures, especially when you want to duplicate the entire structure hierarchy."
+            },
+            "difficulty": "intermediate"
+        }
+    ]
+}
