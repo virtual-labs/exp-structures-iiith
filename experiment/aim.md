@@ -4,7 +4,7 @@ But what if you want to create a collection of data elements with diverse data t
 
 In essence, a structure serves as a custom data type that can encompass multiple components of various data types, allowing you to encapsulate complex data structures in a cohesive manner. This flexibility also extends to creating arrays of structure variables, further enhancing your ability to manage and organize your data effectively.
 
-With this lab, you will gets hands-on and try:
+With this experiment, you will gets hands-on and try:
 
 - To understand how to use structures as a compund datatype.
 - To design structures according to your requirement.
