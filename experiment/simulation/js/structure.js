@@ -140,8 +140,6 @@ window.view = {
         '&emsp;printf (\"maxBalIndex is %d\", maxBalIndex);</br>' +
         '&emsp;return src[maxBalIndex];</br>' +
         '}</br>',
-    // suggestion1: '\"Try Again\"',
-    suggestion2: '',
     // addClickEvent: add EventListener to other methods.
     addClickEvent: function (id, method) {
         var element = document.getElementById(id);
@@ -215,9 +213,6 @@ window.view = {
     // showDefinitionOfAccount: gives solution for how to define structure.
     showDefinitionOfAccount: function () {
         this.setInnerHTML('solutionArea', this.solution1);
-        // this.copyValue('solutionHintArea', 'viewUserCode');
-        // this.changeClass('yesBtnId', 'button buttonPosition');
-        // this.changeClass('noBtn', 'button buttonPosition');
         this.hideContinue(false);
         this.changeClass('submitBtnId', 'button buttonPosition hide');
         document.getElementById('solutionHintArea').disabled = true;
@@ -226,9 +221,6 @@ window.view = {
     // showDeclarationStructure: gives solution for how to declare structure.
     showDeclarationStructure: function () {
         this.setInnerHTML('solutionArea', this.solution2);
-        // this.copyValue('solutionHintArea', 'viewUserCode');
-        // this.changeClass('yesBtnId', 'button buttonPosition');
-        // this.changeClass('noBtn', 'button buttonPosition');
         this.hideContinue(false);
         this.changeClass('submitBtnId', 'button buttonPosition hide');
         document.getElementById('solutionHintArea').disabled = true;
@@ -237,9 +229,6 @@ window.view = {
     // showHowToFillAccount: gives solution to fill an account.
     showHowToFillAccount: function () {
         this.setInnerHTML('solutionArea', this.solution3);
-        // this.copyValue('solutionHintArea', 'viewUserCode');
-        // this.changeClass('yesBtnId', 'button buttonPosition');
-        // this.changeClass('noBtn', 'button buttonPosition');
         this.hideContinue(false);
         this.changeClass('submitBtnId', 'button buttonPosition hide');
         document.getElementById('solutionHintArea').disabled = true;
@@ -248,9 +237,6 @@ window.view = {
     // showMaximumBalance: gives solution to find, maximum balance holder.
     showMaximumBalance: function () {
         this.setInnerHTML('solutionArea', this.solution4);
-        // this.copyValue('solutionHintArea', 'viewUserCode');
-        // this.changeClass('yesBtnId', 'button buttonPosition');
-        // this.changeClass('noBtn', 'button buttonPosition');
         this.hideContinue(false);
         this.changeClass('submitBtnId', 'button buttonPosition hide');
         document.getElementById('solutionHintArea').disabled = true;
@@ -263,9 +249,6 @@ window.view = {
         this.setInnerHTML('guideLineId',  this.guidelineString2);
         this.setInnerHTML('solutionArea', '');
         this.setString('solutionHintArea', this.solutionHint2);
-        // this.eraseString('viewUserCode');
-        // this.changeClass('yesBtnId', 'button buttonPosition hide');
-        // this.changeClass('noBtn', 'button buttonPosition hide');
         this.hideContinue(true);
         this.changeClass('submitBtnId', 'button buttonPosition');
         document.getElementById('solutionHintArea').disabled = false;
@@ -278,9 +261,6 @@ window.view = {
         this.setInnerHTML('guideLineId',  this.guidelineString3);
         this.setInnerHTML('solutionArea', '');
         this.setString('solutionHintArea', this.solutionHint3);
-        // this.eraseString('viewUserCode');
-        // this.changeClass('yesBtnId', 'button buttonPosition hide');
-        // this.changeClass('noBtn', 'button buttonPosition hide');
         this.hideContinue(true);
         this.changeClass('submitBtnId', 'button buttonPosition');
         document.getElementById('solutionHintArea').disabled = false;
@@ -294,12 +274,9 @@ window.view = {
         this.setInnerHTML('guideLineId',  this.guidelineString4);
         this.setInnerHTML('solutionArea', '');
         this.setString('solutionHintArea', this.solutionHint4);
-        // this.changeClass('yesBtnId', 'button buttonPosition hide');
-        // this.changeClass('noBtn', 'button buttonPosition hide');
         this.hideContinue(true);
         this.changeClass('submitBtnId', 'button buttonPosition');
         document.getElementById('solutionHintArea').disabled = false;
-        // this.eraseString('viewUserCode');
         this.stateOfSolution = 4;
     },
     // goToEndOfCode: resets whole experiment to it's initial state. 
@@ -310,10 +287,7 @@ window.view = {
     },
     // removeErrorOfCode: work when user click on button.
     removeErrorOfCode: function () {
-        // this.setString('viewUserCode', this.suggestion1);
-        this.setInnerHTML('solutionArea', this.suggestion2);
-        // this.changeClass('yesBtnId', 'button buttonPosition hide');
-        // this.changeClass('noBtn', 'button buttonPosition hide');
+        this.setInnerHTML('solutionArea', '');
         this.hideContinue(true);
         this.changeClass('submitBtnId', 'button buttonPosition');
         document.getElementById('solutionHintArea').disabled = false;
@@ -321,14 +295,11 @@ window.view = {
     // setInitialString: works when whole experiment reset in it's initial state.
     setInitialString: function () {
         this.changeClass('submitBtnId', 'button buttonPosition');
-        // this.changeClass('yesBtnId', 'button buttonPosition hide');
-        // this.changeClass('noBtn', 'button buttonPosition hide');
         this.hideContinue(true);
         this.setInnerHTML('instructionArea', this.instruction1);
         this.setString('solutionHintArea', this.solutionHint1);
         this.setInnerHTML('stepId', this.stepString1);
         this.setInnerHTML('guideLineId',  this.guidelineString1);
-        // this.setString('viewUserCode', '');
         this.setInnerHTML('solutionArea', '');
     },
     // createStaticStateOfSolution: work on submit button according to state of experiment solution.
