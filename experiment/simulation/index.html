@@ -8,7 +8,7 @@
 	<title>Structures | VLabs</title>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/virtual-labs/virtual-style@0.0.8-b/css/style.min.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css" />
-	<script src="js/structure.js"></script>
+	<script src="js/main.js"></script>
 </head>
 
 <body>
@@ -19,15 +19,11 @@
 					<div class="v-datalist-title" id='stepId'> </div>
 					<div class="container">
 						<div class="executionDivision">
-							<div class="executionDivisionTitle">
-								<!-- <div class="outputPic"></div> -->
-								<!-- <div class="stepsText" id='stepId'></div> -->
-							</div>
 							<div class="stepExecutionDisplay">
 								<div class="instructionArea" id='instructionArea'>
 								</div>
-							</div><!-- end of stepExecutionDisplay -->
-						</div><!-- end of executionDivision -->
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -36,48 +32,25 @@
 					<div class="v-datalist-title" id='guideLineId'> </div>
 					<div class="container">
 						<div class="outputDivisionTitle">
-							<!-- <div class="outputPic"></div> -->
-							<!-- <div class="outputText" id='guideLineId'></div> -->
 							<button class="button buttonPosition" id='submitBtnId'>Submit Code</button>
-							<!-- <button id='submitBtnId1'>Submit Code</button> -->
 						</div>
 						<div class="resultDisplay">
 							<textarea class="codeEditArea" id='solutionHintArea' dis></textarea>
-						</div><!-- end of resultDisplay -->
+						</div>
 					</div>
 				</div>
 			</div>
-			<!-- <div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
-				<div class="v-datalist-container" style="min-height: 350px;">
-					<div class="v-datalist-title">User Input Code</div>
-					<div class="container">
-						<div class="codeOutputTitle">
-							<div class="userInputPicture"></div>
-							<!- <div class="userInputText">User Input Code</div> ->
-						</div>
-						<div class="codeOutputBody">
-							<textarea class="codeOutputText" id='viewUserCode' disabled></textarea>
-						</div><!- end of codeOutputBody ->
-					</div>
-				</div>
-			</div> -->
 			<div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
 				<div class="v-datalist-container" style="min-height: 300px;">
 					<div class="v-datalist-title">Solution</div>
 					<div class="container">
-						<!-- <div class="codeExplanationTitle"> -->
-						<!-- <div class="solutionPicture"></div> -->
-						<!-- <div class="solutionText">Solution </div> -->
 						<div class="hide" id="continue">Continue?
 							<button id='noBtn' class="button buttonPosition">No</button>
 							<button id='yesBtnId' class="button buttonPosition">Yes</button>
-							<!-- <button id='noBtn' hidden>No</button>
-							<button id='yesBtnId1' hidden>Yes</button> -->
 						</div>
-						<!-- </div> -->
 						<div class="codeExplanationBody">
 							<div class="explanationText" id='solutionArea'></div>
-						</div><!-- end of codeExplanationBody -->
+						</div>
 					</div>
 				</div>
 			</div>
