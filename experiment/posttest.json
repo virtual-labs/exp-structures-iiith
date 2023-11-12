@@ -13,7 +13,7 @@
             "difficulty": "intermediate"
         },
         {
-            "question": "2. Can arrays be a part of the structure?",
+            "question": "2. An Array can be a part of a Structure.",
             "answers": {
                 "a": "True",
                 "b": "False"
