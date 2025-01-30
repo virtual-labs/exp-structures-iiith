@@ -12,7 +12,7 @@ window.model = {
 
 window.view = {
     stateOfSolution: 1, // shows state of solution.
-    stateOfExeplation: 0, // shows state of exeplation.
+    stateOfExeplation: 0, // shows state of explanation.
     // below strings shows steps, guideline, instruction, and solution during of code execution.
     stepString1: 'Step 1: Define a structure',
     stepString2: 'Step 2: Declare a structure',
@@ -94,10 +94,10 @@ window.view = {
         'account initAcc(char* name,char* type,char* branch,char* number,unsigned int balance);</br></br>' +
         'void main(){</br>' +
         '&emsp;account bank[4];</br>' +
-        '&emsp;bank[0]=initAcc(\"Ram\",\"Savings\",\",1000000000,300);</br>' +
-        '&emsp;bank[1]=initAcc(\"Shyam\",\"Savings\",\",1000000001,700);</br>' +
-        '&emsp;bank[2]=initAcc(\"Pradeep\",\"Current\",\",1000000002,600);</br>' +
-        '&emsp;bank[3]=initAcc(\"Suresh\",\"Savings\",\",1000000004,800);</br>' +
+        '&emsp;bank[0]=initAcc(\"Ram\",\"Savings\",\", 1000000000,300);</br>' +
+        '&emsp;bank[1]=initAcc(\"Shyam\",\"Savings\",\", 1000000001,700);</br>' +
+        '&emsp;bank[2]=initAcc(\"Pradeep\",\"Current\",\", 1000000002,600);</br>' +
+        '&emsp;bank[3]=initAcc(\"Suresh\",\"Savings\",\", 1000000004,800);</br>' +
         '&emsp;account max=findmax(bank);</br>' +
         '}</br>',
     solutionHint1: 'struct account {\n\n\n};',

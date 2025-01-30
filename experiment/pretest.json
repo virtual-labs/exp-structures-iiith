@@ -122,6 +122,23 @@
                 "d": "This option is incorrect. Deep copy is applicable to arrays of structures, especially when you want to duplicate the entire structure hierarchy."
             },
             "difficulty": "intermediate"
+        },
+        {
+            "question":"9. What will be the ouptut of the following function call: fun4(4,3); where fun4 is defined as: <br/>  <img src='images/code5.png'> ",
+            "answers":{
+                "a":"10 60",
+                "b":"20 60",
+                "c":"40 50",
+                "d":"80 30"
+            },
+            "correctAnswer":"a",
+            "explanations":{
+                "a":"This option is correct. The function fun4 takes two arguments, A and B, and sets B.x to A.x and B.y to B.y + A.y. When called with a={10, 20} and b={30, 40}, the output will be 10 and 60, resulting in 10 60.",
+                "b":"This option is incorrect. The function fun4 does not return 20 or 60 as output.",
+                "c":"This option is incorrect. The function fun4 does not return 40 or 50 as output.",
+                "d":"This option is incorrect. The function fun4 does not return 80 or 30 as output."
+            },
+            "difficulty":"intermediate"
         }
     ]
 }
