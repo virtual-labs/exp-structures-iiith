@@ -1,0 +1,35 @@
+
+/home/runner/work/exp-structures-iiith/exp-structures-iiith/experiment/simulation/js/main.js
+   97:32  warning  Unnecessary escape character: \"  no-useless-escape
+   97:37  warning  Unnecessary escape character: \"  no-useless-escape
+   97:40  warning  Unnecessary escape character: \"  no-useless-escape
+   97:49  warning  Unnecessary escape character: \"  no-useless-escape
+   97:52  warning  Unnecessary escape character: \"  no-useless-escape
+   98:32  warning  Unnecessary escape character: \"  no-useless-escape
+   98:39  warning  Unnecessary escape character: \"  no-useless-escape
+   98:42  warning  Unnecessary escape character: \"  no-useless-escape
+   98:51  warning  Unnecessary escape character: \"  no-useless-escape
+   98:54  warning  Unnecessary escape character: \"  no-useless-escape
+   99:32  warning  Unnecessary escape character: \"  no-useless-escape
+   99:41  warning  Unnecessary escape character: \"  no-useless-escape
+   99:44  warning  Unnecessary escape character: \"  no-useless-escape
+   99:53  warning  Unnecessary escape character: \"  no-useless-escape
+   99:56  warning  Unnecessary escape character: \"  no-useless-escape
+  100:32  warning  Unnecessary escape character: \"  no-useless-escape
+  100:40  warning  Unnecessary escape character: \"  no-useless-escape
+  100:43  warning  Unnecessary escape character: \"  no-useless-escape
+  100:52  warning  Unnecessary escape character: \"  no-useless-escape
+  100:55  warning  Unnecessary escape character: \"  no-useless-escape
+  123:32  warning  Unnecessary escape character: \"  no-useless-escape
+  123:41  warning  Unnecessary escape character: \"  no-useless-escape
+  123:63  warning  Unnecessary escape character: \"  no-useless-escape
+  123:72  warning  Unnecessary escape character: \"  no-useless-escape
+  140:24  warning  Unnecessary escape character: \"  no-useless-escape
+  140:43  warning  Unnecessary escape character: \"  no-useless-escape
+  150:56  warning  'view' is not defined             no-undef
+  151:53  warning  'view' is not defined             no-undef
+  152:50  warning  'view' is not defined             no-undef
+  344:5   warning  'view' is not defined             no-undef
+
+✖ 30 problems (0 errors, 30 warnings)
+

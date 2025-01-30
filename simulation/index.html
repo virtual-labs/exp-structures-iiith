@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Structures | VLabs</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/virtual-labs/virtual-style@0.0.8-b/css/style.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css" />
+	<script src="js/main.js"></script>
+</head>
+
+<body>
+	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer">
+		<div class="mdl-grid">
+			<div class="mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
+				<div class="v-datalist-container" style="min-height: 700px;">
+					<div class="v-datalist-title" id='stepId'> </div>
+					<div class="container">
+						<div class="executionDivision">
+							<div class="stepExecutionDisplay">
+								<div class="instructionArea" id='instructionArea'>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
+				<div class="v-datalist-container" style="min-height: 300px; min-width: 50%;">
+					<div class="v-datalist-title" id='guideLineId'> </div>
+					<div class="container">
+						<div class="outputDivisionTitle">
+							<button class="button buttonPosition" id='submitBtnId'>Check Solution</button>
+						</div>
+						<div class="resultDisplay">
+							<textarea class="codeEditArea" id='solutionHintArea' dis></textarea>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
+				<div class="v-datalist-container" style="min-height: 300px;">
+					<div class="v-datalist-title">Solution</div>
+					<div class="container">
+						<div class="hide" id="continue">Next Step
+							<button id='noBtn' class="button buttonPosition">No</button>
+							<button id='yesBtnId' class="button buttonPosition">Yes</button>
+						</div>
+						<div class="codeExplanationBody">
+							<div class="explanationText" id='solutionArea'></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.teal-deep_purple.min.css" />
+		<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+<script src="../assets/js/iframeResize.js"></script>
+          
+          </body>
+
+</html>

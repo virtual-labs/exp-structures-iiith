@@ -1,0 +1,136 @@
+{
+    "version": 2.0,
+    "questions": [
+        {
+            "question": "1. What will be the ouptut of the following function call: fun4(4,3); where fun4 is defined as: <br/>  <img src='images/code5.png'> ",
+            "answers": {
+                "a": "10 60",
+                "b": "20 60",
+                "c": "40 50",
+                "d": "80 30"
+            },
+            "correctAnswer": "a",
+            "difficulty": "intermediate"
+        },
+        {
+            "question": "2. An Array can be a part of a Structure.",
+            "answers": {
+                "a": "True",
+                "b": "False"
+            },
+            "correctAnswer": "a",
+            "explanations": {
+                "a": "This option is True. Arrays can be a part of a structure. In many programming languages, you can define a structure with members that include arrays of various data types.",
+                "b": "This option is False. Arrays can indeed be a part of a structure, and this is a common practice when designing data structures in programming."
+            },
+            "difficulty": "intermediate"
+        },
+        {
+            "question": "3. Can one define an array of structure variables?",
+            "answers": {
+                "a": "True",
+                "b": "False"
+            },
+            "correctAnswer": "a",
+            "explanations": {
+                "a": "This option is True. It is possible to define an array of structure variables in many programming languages. This allows you to create collections of structured data.",
+                "b": "This option is False. Defining an array of structure variables is a common practice in programming to manage and store structured data."
+            },
+            "difficulty": "beginner"
+        },
+        {
+            "question": "4. The following structure declaration is correct? <br/>   <img src='images/code8.png'>",
+            "answers": {
+                "a": "True",
+                "b": "False"
+            },
+            "correctAnswer": "b",
+            "explanations": {
+                "a": "This option is incorrect. The structure declaration provided in the image is incorrect. In C and many other programming languages, you cannot initialize structure members with default values in the structure definition as shown. Structure members typically need to be assigned values in instances of the structure rather than in the structure definition itself.",
+                "b": "This option is correct."
+            },
+            "difficulty": "beginner"
+        },
+        {
+            "question": "5. A structure is a collection of variables under a ______ name.",
+            "answers": {
+                "a": "Single",
+                "b": "multiple"
+            },
+            "correctAnswer": "a",
+            "explanations": {
+                "a": "This option is correct. A structure is a collection of variables grouped together under a single name or data type. It allows you to define a composite data type that holds multiple variables.",
+                "b": "This option is incorrect. A structure is not a collection of variables under multiple names; it's specifically designed to group variables under a single name or data type."
+            },
+            "difficulty": "beginner"
+        },
+        {
+            "question": "6. What is the primary difference between a structure and a class in object-oriented programming?",
+            "answers": {
+                "a": "Structures can have methods, while classes cannot.",
+                "b": "Classes can have private members, while structures cannot.",
+                "c": "Structures have all public members by default, while classes have private members by default.",
+                "d": "There is no difference between structures and classes."
+            },
+            "correctAnswer": "c",
+            "explanations": {
+                "a": "This option is incorrect. In many programming languages, classes can have methods, just like structures.",
+                "b": "This option is incorrect. Both classes and structures can have private members, but the default member visibility differs between them.",
+                "c": "This option is correct. Structures typically have all their members as public by default, while classes often have private members as the default visibility.",
+                "d": "This option is incorrect. There are differences between structures and classes in object-oriented programming, particularly in terms of member visibility and other features."
+            },
+            "difficulty": "intermediate"
+        },
+        {
+            "question": "7. What is the purpose of the 'typedef' keyword when defining a structure?",
+            "answers": {
+                "a": "To create an instance of the structure",
+                "b": "To specify the size of the structure",
+                "c": "To define an alias or a custom name for the structure",
+                "d": "To make the structure immutable"
+            },
+            "correctAnswer": "c",
+            "explanations": {
+                "a": "This option is incorrect. The 'typedef' keyword is not used to create instances of structures.",
+                "b": "This option is incorrect. The 'typedef' keyword is not used to specify the size of a structure.",
+                "c": "This option is correct. The 'typedef' keyword is used to define an alias or a custom name for a structure, making it easier to use and read in code.",
+                "d": "This option is incorrect. The 'typedef' keyword does not make a structure immutable; it defines a new name for the structure type."
+            },
+            "difficulty": "intermediate"
+        },
+        {
+            "question": "8. When might you use a nested structure in programming?",
+            "answers": {
+                "a": "To create a recursive data structure",
+                "b": "To improve memory efficiency",
+                "c": "To simplify code readability",
+                "d": "Nested structures are not a common practice in programming."
+            },
+            "correctAnswer": "a",
+            "explanations": {
+                "a": "This option is correct. One common use of nested structures is to create recursive data structures, such as trees or linked lists.",
+                "b": "This option is incorrect. While nested structures can be used to improve data organization, their primary purpose is not memory efficiency.",
+                "c": "This option is incorrect. Nested structures may not necessarily simplify code readability; their use depends on the specific problem domain.",
+                "d": "This option is incorrect. Nested structures are used in various programming scenarios, including recursive data structures and organizing complex data."
+            },
+            "difficulty": "intermediate"
+        },
+        {
+            "question": "9. In C and C++, can a structure have member functions?",
+            "answers": {
+                "a": "No, structures cannot have member functions.",
+                "b": "Yes, structures can have member functions just like classes.",
+                "c": "Member functions are not allowed in C and C++.",
+                "d": "Structures can have member functions, but only if they are declared as pointers."
+            },
+            "correctAnswer": "b",
+            "explanations": {
+                "a": "This option is incorrect. Structures in C and C++ can have member functions.",
+                "b": "This option is correct. In both C and C++, structures can have member functions, similar to classes.",
+                "c": "This option is incorrect. Member functions are allowed in C++ structures and classes.",
+                "d": "This option is incorrect. The presence of member functions in structures is not dependent on whether they are declared as pointers."
+            },
+            "difficulty": "intermediate"
+        }
+    ]
+}
