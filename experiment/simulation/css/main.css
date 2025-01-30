@@ -232,8 +232,7 @@
 
 .codeEditArea,
 .explanationText,
-.codeOutputText,
-.instructionArea {
+.codeOutputText {
     height: 100%;
     width: 95%;
     outline: none;
@@ -347,6 +346,10 @@
     font-weight: bold;
 }
 
+.instructionArea {
+    height: auto;
+    overflow: auto;
+}
 
 @media only screen and (min-width: 1000px) {
 
@@ -370,5 +373,29 @@
     .stepExecutionDisplay {
         line-height: 140%;
         font-size: 1.2em;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .mdl-grid {
+        flex-direction: column;
+    }
+    .mdl-cell {
+        width: 100% !important;
+    }
+    .v-datalist-container {
+        min-height: auto;
+        width: 100%;
+        box-sizing: border-box; 
+    }
+    .codeOutputTitle,
+    .codeExplanationTitle,
+    .outputDivisionTitle,
+    .executionDivisionTitle {
+        font-size: 1em;
+    }
+    .stepExecutionDisplay {
+        line-height: 140%;
+        font-size: 1em;
     }
 }

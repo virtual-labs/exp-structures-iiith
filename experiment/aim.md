@@ -3,9 +3,3 @@ When working with data in programming, you often encounter variables of specific
 But what if you want to create a collection of data elements with diverse data types and reference this entire ensemble with a single identifier? The answer is a resounding 'yes,' and the tool for this task is structures. Structures empower you to assemble a heterogeneous collection of elements, each with its own data type, and then reference this entire assembly using a single name. Structures can even include arrays, making them incredibly versatile.
 
 In essence, a structure serves as a custom data type that can encompass multiple components of various data types, allowing you to encapsulate complex data structures in a cohesive manner. This flexibility also extends to creating arrays of structure variables, further enhancing your ability to manage and organize your data effectively.
-
-With this experiment, you will gets hands-on and try:
-
-- To understand how to use structures as a compund datatype.
-- To design structures according to your requirement.
-- To understand when structures are better data-structures than arrays.
