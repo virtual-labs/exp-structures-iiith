@@ -2,14 +2,14 @@ Arrays are used to store large sets of data and manipulate them but the disadvan
 
 ```
             struct student_record{
-            char Name[100];
-            int Roll;
+            char name[100];
+            int rollnumber;
             char gender;
-            char Stream[100];
+            char stream[100];
             };
 ```       
 
-This definition will practically create a new datatype students_record having a 2 character arrays, one integer and one character. So, in the main function one can define variables of this new compound datatype as,
+This definition will practically create a new datatype student_record having a 2 character arrays, one integer and one character. So, in the main function one can define variables of this new compound datatype as,
 
 ```
             student_record student1, student2;
@@ -18,16 +18,16 @@ This definition will practically create a new datatype students_record having a 
 You can even define an array of structure variables like,
 
 ```
-            students_record students[100];
+            student_record students[100];
 ```       
 
 Now, the individual elements of a structure variable can be addressed by the dot(.) operator. For example, the variable student1 can initialized using the following statements:
 
 ```
-            strcpy(student1.Name,"Abc");
-            student1.Roll=24;
+            strcpy(student1.name,"Abc");
+            student1.rollnumber=24;
             student1.gender='m';
-            strcpy(student1.Stream,"Computer Science");
+            strcpy(student1.stream,"Computer Science");
 ```          
 
-An interesting thing to note is that the memory allocation for the whole structure is done contigously. So, size of one variable of type student_record is 100+4+1+100=205 bytes. And, if r1 and r2 are two variables of the structure struct_record, then writing r1=r2 is equivalent to copying the data in 205 bytes corresponding to r2 and copying them into r1.
+An interesting thing to note is that the memory allocation for the whole structure is done contigously. So, size of one variable of type student_record is 100+4+1+100=205 bytes. And, if r1 and r2 are two variables of the structure student_record, then writing r1=r2 is equivalent to copying the data in 205 bytes corresponding to r2 and copying them into r1.
