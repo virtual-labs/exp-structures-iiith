@@ -1,33 +1,39 @@
-Arrays are used to store large sets of data and manipulate them but the disadvantage is that all the elements stored in an array are to be of the same data type. When we need a collection of different data items of different data types, such as integer, float etc., we can use a structure. Structure can be seen as datatype composed of different datatypes. For example, suppose you want to store information about students enrolling in a university. Then, you may naturally want to store information like Student Name, Roll Number, Gender, Batch, etc. Ofcourse, you can create separate arrays for storing each of these quantities, but notice that for each student this diverse data is highly related. So, using a structre to pack these data entries into a single variables would be a good choice. In this case we can define the structure as,
+In C programming, arrays are useful for storing and working with many values of the same type, such as a list of numbers or characters. However, sometimes you need to keep together different types of information that belong to a single entity. For example, a student's record might include their name (text), roll number (number), gender (character), and stream (text).
+
+To handle such cases, C provides structures. A structure is a user-defined data type that allows you to group variables of different types under one name. This makes it easier to organize and manage related data.
+
+For example, to store information about students, you can define a structure like this:
 
 ```
-            struct student_record{
-            char name[100];
-            int rollnumber;
-            char gender;
-            char stream[100];
-            };
-```       
+struct student_record {
+    char name[100];
+    int rollnumber;
+    char gender;
+    char stream[100];
+};
+```
 
-This definition will practically create a new datatype student_record having a 2 character arrays, one integer and one character. So, in the main function one can define variables of this new compound datatype as,
+This creates a new data type called `student_record` that contains a name, roll number, gender, and stream. You can then create variables of this type:
 
 ```
-            student_record student1, student2;
-```          
+struct student_record student1, student2;
+```
 
-You can even define an array of structure variables like,
+Or, if you want to store records for many students, you can create an array of structures:
 
 ```
-            student_record students[100];
-```       
+struct student_record students[100];
+```
 
-Now, the individual elements of a structure variable can be addressed by the dot(.) operator. For example, the variable student1 can initialized using the following statements:
+To access or set the values inside a structure, use the dot (`.`) operator. For example:
 
 ```
-            strcpy(student1.name,"Abc");
-            student1.rollnumber=24;
-            student1.gender='m';
-            strcpy(student1.stream,"Computer Science");
-```          
+strcpy(student1.name, "Abc");
+student1.rollnumber = 24;
+student1.gender = 'm';
+strcpy(student1.stream, "Computer Science");
+```
 
-An interesting thing to note is that the memory allocation for the whole structure is done contigously. So, size of one variable of type student_record is 100+4+1+100=205 bytes. And, if r1 and r2 are two variables of the structure student_record, then writing r1=r2 is equivalent to copying the data in 205 bytes corresponding to r2 and copying them into r1.
+All the data for a structure is stored together in memory. If you copy one structure variable to another (e.g., `student2 = student1;`), all the fields are copied at once.
+
+Structures are powerful because they let you create complex data types that match real-world information, making your programs easier to write and understand.
