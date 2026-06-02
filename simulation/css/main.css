@@ -1,0 +1,401 @@
+.v-content-container,
+.v-datalist-container {
+    border: .2rem solid #176696;
+    border-radius: 1rem;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.container {
+    /* background-color: azure; */
+    width: 100%;
+    border-bottom: transparent;
+    border-radius: 1rem;
+}
+
+#continue {
+    width: 100%;
+    color: #3c8dde;
+    font-size: 1.2em;
+    margin-top: .9vmin;
+    height: 30px;
+}
+
+.button,
+.buttonDisable {
+    padding: 0.5em 1em;
+    border-radius: 0.2em;
+    /* overflow: visible; */
+    outline: none;
+    white-space: nowrap;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+    border: 1px solid #d4d4d4;
+    margin: 0;
+    text-align: center;
+    zoom: 1;
+    display: inline;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 2%;
+}
+
+.button {
+    cursor: pointer;
+    text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);
+    border-color: #3072b3;
+    border-bottom-color: #2a65a0;
+    color: #fff;
+    background-color: #3c8dde;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#599bdc), to(#3072b3));
+    background-image: -moz-linear-gradient(#599bdc, #3072b3);
+    background-image: -o-linear-gradient(#599bdc, #3072b3);
+    background-image: linear-gradient(#599bdc, #3072b3);
+}
+
+.buttonDisable {
+    text-shadow: 1px 1px 0 #fff;
+    color: #999999;
+    background-color: #ececec;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f4f4f4), to(#ececec));
+    background-image: -moz-linear-gradient(#f4f4f4, #ececec);
+    background-image: -ms-linear-gradient(#f4f4f4, #ececec);
+    background-image: -o-linear-gradient(#f4f4f4, #ececec);
+    background-image: linear-gradient(#f4f4f4, #ececec);
+}
+
+.buttonDisable,
+.button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+.outputDivisionTitle,
+.executionDivisionTitle {
+    color: #2a65a0;
+    top: 0%;
+    height: 13%;
+    text-decoration: none;
+    text-align: center;
+    text-shadow: 1px 1px 0 #fff;
+    width: 100%;
+    background-color: #F8F8F8;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.executionPic {
+    margin-top: .5vh;
+    width: 10%;
+    background-image: url('../images/pageIcon.png');
+}
+
+.executionText {
+    text-align: left;
+    width: 50%;
+    float: left;
+    height: 100%;
+    padding-top: 1vh;
+}
+
+/* .outputPic {
+    margin-top: 1vh;
+    width: 10%;
+    background-image: url('../images/edit.png');
+} */
+
+.outputText,
+.stepsText {
+    text-align: left;
+    float: left;
+    height: 100%;
+}
+
+.outputText {
+    width: 60%;
+}
+
+.stepsText {
+    width: 75%;
+}
+
+.buttonPosition {
+    float: right;
+    margin-right: 3%;
+    margin-top: .9vmin;
+    height: 30px;
+}
+
+.codeOutputTitle,
+.codeExplanationTitle {
+    width: 100%;
+    height: 17%;
+    text-decoration: none;
+    text-align: center;
+    text-shadow: 1px 1px 0 #fff;
+    color: #2a65a0;
+    background-color: #F8F8F8;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.executionPic,
+.outputPic {
+    margin-left: 5%;
+    float: left;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+
+/* .userInputPicture,
+.solutionPicture {
+    margin-top: 1.4vh;
+    width: 10%;
+    background-image: url('../images/output.png');
+    margin-left: 5%;
+    float: left;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-color: transparent;
+} */
+
+/* .userInputText,
+.solutionText {
+    width: 50%;
+    float: left;
+    height: 100%;
+    height: inherit;
+    text-align: left;
+} */
+
+.codeOutputBody,
+.codeExplanationBody {
+    overflow: auto;
+    width: 100%;
+    height: 82%;
+    /* border-top: 1px solid #CCC; */
+}
+
+.textField {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 15px;
+    float: left;
+    margin-left: 20%;
+    /* height: 26px; */
+    height: 100%;
+    width: 70%;
+    min-width: 100px;
+    border: 1px solid #CCC;
+    outline: none;
+    border-radius: 3px;
+}
+
+.okButton {
+    font-size: 13px;
+    min-width: 150px;
+    float: left;
+    margin-top: 20px;
+    margin-left: 10%;
+    height: 30px;
+    width: 80%;
+}
+
+.radioButtonHolder {
+    width: 100%;
+    height: 3.5%;
+    float: left;
+    font-size: 16px;
+    text-align: left;
+}
+
+.radiobutton {
+    margin-left: 7%;
+    float: left;
+    width: 10%;
+    height: 75%;
+}
+
+.radioText {
+    float: left;
+    width: 70%;
+    height: 5%;
+    text-align: left;
+}
+
+.resultDisplay {
+    width: 100%;
+    height: inherit;
+    border-top: 1px solid #CCC;
+}
+
+.codeEditArea,
+.explanationText,
+.codeOutputText {
+    height: 100%;
+    width: 95%;
+    outline: none;
+    border: none;
+    text-align: left;
+}
+
+.codeEditArea,
+.codeOutputText,
+.explanationText {
+    line-height: 130%;
+    font-size: 1.2em;
+    height: 200px;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-bottom: 3%;
+}
+
+.instructionArea,
+.explanationText {
+    font-size: 1.25em;
+}
+
+.table1 {
+    float: left;
+    width: 100.4%;
+    height: 80%;
+    font-size: .8em;
+    border: 1px Solid #CCC;
+    border-collapse: collapse;
+
+}
+
+.table2 {
+    float: left;
+    width: 100.4%;
+    height: 20%;
+    font-size: .8em;
+    border-collapse: collapse;
+}
+
+.table1 td,
+.table1 th {
+    border: 1px solid #CCC;
+}
+
+.table2 td {
+    border-bottom: 1px solid #CCC;
+    border-left: 1px solid #CCC;
+    border-right: 1px solid #CCC;
+}
+
+.td1 {
+    width: 16.2%;
+}
+
+.td2 {
+    width: 83.7%;
+}
+
+.stepExecutionDisplay {
+    padding-left: 2%;
+    /* overflow-x: auto; */
+    width: 97.8%;
+    height: 85%;
+    text-align: left;
+    border-top: 1px solid #CCC;
+}
+
+.executionDivisionFooter {
+    height: 10%;
+    min-height: 38px;
+    width: 100%;
+    border-top: 1px solid #CCC;
+}
+
+.startButton {
+    margin-right: 15px;
+    height: 28px;
+    width: 12%;
+    float: right;
+    font-size: 13px;
+}
+
+.nextButton {
+    margin-right: 15px;
+    height: 28px;
+    width: 12%;
+    float: right;
+    font-size: 13px;
+}
+
+.buttonHolder {
+    margin-top: 5px;
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.redClass {
+    display: block;
+    color: red;
+    font-weight: bold;
+}
+
+.instructionArea {
+    height: auto;
+    overflow: auto;
+}
+
+@media only screen and (min-width: 1000px) {
+
+    .codeOutputTitle,
+    .codeExplanationTitle,
+    .outputDivisionTitle,
+    .executionDivisionTitle {
+        font-size: 1.2em;
+    }
+}
+
+@media only screen and (max-width: 999px) and (min-width: 600px) {
+
+    .codeOutputTitle,
+    .codeExplanationTitle,
+    .outputDivisionTitle,
+    .executionDivisionTitle {
+        font-size: 1.1em;
+    }
+
+    .stepExecutionDisplay {
+        line-height: 140%;
+        font-size: 1.2em;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .mdl-grid {
+        flex-direction: column;
+    }
+    .mdl-cell {
+        width: 100% !important;
+    }
+    .v-datalist-container {
+        min-height: auto;
+        width: 100%;
+        box-sizing: border-box; 
+    }
+    .codeOutputTitle,
+    .codeExplanationTitle,
+    .outputDivisionTitle,
+    .executionDivisionTitle {
+        font-size: 1em;
+    }
+    .stepExecutionDisplay {
+        line-height: 140%;
+        font-size: 1em;
+    }
+}
