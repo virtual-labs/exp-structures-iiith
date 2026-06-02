@@ -131,6 +131,40 @@
         "d": "Incorrect. The presence of member functions in structures is not dependent on whether they are declared as pointers."
       },
       "difficulty": "intermediate"
+    },
+    {
+      "question": "10. Which statement about copying structures in C is correct?",
+      "answers": {
+        "a": "Only individual members can be copied one by one",
+        "b": "A structure variable can be assigned to another structure variable directly",
+        "c": "Structures cannot be assigned at all",
+        "d": "Structures can only be copied using pointers"
+      },
+      "correctAnswer": "b",
+      "explanations": {
+        "a": "Incorrect. Individual members can be copied, but direct assignment of the entire structure is also allowed.",
+        "b": "Correct. In C, one structure variable can be assigned to another of the same type directly.",
+        "c": "Incorrect. Structure assignment is allowed when both variables are of the same structure type.",
+        "d": "Incorrect. Pointers are not required for copying a structure variable."
+      },
+      "difficulty": "advanced"
+    },
+    {
+      "question": "11. Why are structures often preferred over arrays when storing student records?",
+      "answers": {
+        "a": "Because structures store only numeric values",
+        "b": "Because arrays can store multiple data types but structures cannot",
+        "c": "Because structures can group different data types such as name, roll number, and marks together",
+        "d": "Because structures automatically allocate dynamic memory"
+      },
+      "correctAnswer": "c",
+      "explanations": {
+        "a": "Incorrect. Structures can store many data types, not only numeric values.",
+        "b": "Incorrect. Arrays usually store elements of the same data type.",
+        "c": "Correct. Structures are ideal for grouping different but related data items into one record.",
+        "d": "Incorrect. Structures do not automatically allocate dynamic memory."
+      },
+      "difficulty": "advanced"
     }
   ]
 }
