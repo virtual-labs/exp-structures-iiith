@@ -139,6 +139,40 @@
         "d": "Incorrect. The function fun4 does not return 80 or 30 as output."
       },
       "difficulty": "intermediate"
+    },
+    {
+      "question": "10. Which statement best describes a structure in C?",
+      "answers": {
+        "a": "A structure can store only integers",
+        "b": "A structure groups related variables of different data types under one name",
+        "c": "A structure is used only for arrays",
+        "d": "A structure cannot be copied as a whole"
+      },
+      "correctAnswer": "b",
+      "explanations": {
+        "a": "Incorrect. A structure can contain members of different data types.",
+        "b": "Correct. A structure groups related variables of different data types under one name.",
+        "c": "Incorrect. Structures are not limited to arrays.",
+        "d": "Incorrect. A structure variable can be assigned to another structure variable as a whole."
+      },
+      "difficulty": "advanced"
+    },
+    {
+      "question": "11. Which of the following is a valid way to declare an array of structures?",
+      "answers": {
+        "a": "struct student s[10];",
+        "b": "struct student s(10);",
+        "c": "structure student s[10];",
+        "d": "struct student *s = 10;"
+      },
+      "correctAnswer": "a",
+      "explanations": {
+        "a": "Correct. This declares an array of 10 structure variables.",
+        "b": "Incorrect. Parentheses are not used for array declaration in C.",
+        "c": "Incorrect. C uses the keyword struct, not structure.",
+        "d": "Incorrect. This is not a valid declaration of an array of structures."
+      },
+      "difficulty": "advanced"
     }
   ]
 }
